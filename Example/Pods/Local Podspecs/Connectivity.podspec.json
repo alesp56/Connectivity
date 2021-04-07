@@ -28,7 +28,7 @@
   ],
   "source_files": "Connectivity/Classes/**/*",
   "exclude_files": [
-    "Connectivity/Classes/Reachability/LICENSE.txt"
+    "Connectivity/Classes/O7Reachability/LICENSE.txt"
   ],
   "swift_version": "5.0"
 }

@@ -12,7 +12,7 @@ import Network
 import UIKit
 #endif
 #if IMPORT_REACHABILITY
-import Reachability
+import O7Reachability
 #endif
 
 @objcMembers
@@ -129,7 +129,7 @@ public class Connectivity: NSObject {
     private var externalQueue: DispatchQueue = DispatchQueue.main
 
     /// Reachability instance for checking network adapter status
-    private let reachability: Reachability
+    private let reachability: O7Reachability
 
     /// Can be used to set a custom validator conforming to `ConnectivityResponseValidator`
     public var responseValidator: ConnectivityResponseValidator =
@@ -174,7 +174,7 @@ public class Connectivity: NSObject {
 
     public init(shouldUseHTTPS: Bool = true) {
         type(of: self).isHTTPSOnly = shouldUseHTTPS
-        self.reachability = Reachability.forInternetConnection()
+        self.reachability = O7Reachability.forInternetConnection()
     }
 
     deinit {

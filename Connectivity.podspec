@@ -18,6 +18,6 @@ Connectivity wraps Apple's Reachability code to provide a reliable measure of wh
   s.weak_frameworks = 'Network', 'Combine'
   s.source_files = 'Connectivity/Classes/**/*'
   s.exclude_files = [
-    'Connectivity/Classes/Reachability/LICENSE.txt'
+    'Connectivity/Classes/O7Reachability/LICENSE.txt'
   ]
 end

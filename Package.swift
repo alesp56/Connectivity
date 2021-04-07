@@ -17,15 +17,15 @@ let package = Package(
     targets: [
         .target(
             name: "Connectivity",
-            dependencies: ["Reachability"],
+            dependencies: ["O7Reachability"],
             path: "Connectivity/Classes",
-            exclude: ["Reachability"],
+            exclude: ["O7Reachability"],
             swiftSettings: [.define("IMPORT_REACHABILITY")]
         ),
         .target(
-            name: "Reachability",
+            name: "O7Reachability",
             dependencies: [],
-            path: "Connectivity/Classes/Reachability",
+            path: "Connectivity/Classes/O7Reachability",
             publicHeadersPath: ""
         )
     ]
